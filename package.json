@@ -1,0 +1,11 @@
+{
+  "name": "get-going",
+  "version": "0.0.1",
+  "description": "Develop against this server.",
+  "main": "./dev-server.js",
+  "dependencies": {
+    "express": "^4.9.5",
+	"vhost": "^3.0.0",
+	"serve-favicon": "^2.2.0"
+  }
+}
