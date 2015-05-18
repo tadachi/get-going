@@ -28,12 +28,12 @@ var log = bunyan.createLogger({name: 'myapp'});
 var httpServer = app.listen(httpPort, function() {
     //debug('Express webServer listening on httpPort ' + webServer.address().httpPort);
     console.log(__dirname);
+    console.log('Edit index.html and try localhost:4000 in your web browser.');
     console.log('Listening on httpPort: ' + httpPort);
     console.log('node -v: ' + process.versions.node);
 });
 
 var ioHttp = require('socket.io').listen(httpServer);
-//var ioHttps = require('socket.io').listen(httpsServer);
 
 /**
  *  Initialize website(s).
@@ -47,7 +47,6 @@ var www = express();
 www.use('/js', express.static(__dirname + '/homepage/view/js'));
 www.use('/css', express.static(__dirname + '/homepage/view/css'));
 www.use('/fonts', express.static(__dirname + '/homepage/view/fonts'));
-
 
 /**
  *  Serve web content.

@@ -1,6 +1,5 @@
 {
   "name": "get-going",
-  "version": "0.0.1",
   "description": "Develop against this server.",
   "main": "./dev-server.js",
   "private": true,
