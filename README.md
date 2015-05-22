@@ -17,5 +17,5 @@ Rest assured, it is git ignored so it will not be accidentally added to the repo
 ## Run
 
 ```bash
-    node dev-server.js
+$ node dev-server.js
 ```
